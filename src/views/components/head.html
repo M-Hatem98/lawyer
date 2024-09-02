@@ -1,0 +1,25 @@
+<!-- Meta Info -->
+<meta charset="utf-8" />
+<meta name="description" content="Base Website" />
+<meta name="keywords" content="Base Website" />
+<meta name="author" content="Mohamed Hatem" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<!-- Page Title -->
+<title>Base Website - @@title</title>
+
+<!-- Style Sheets -->
+@@if (context.arabic === true) {
+@@include('../resources/css-files.html', {arabic: true})
+}
+
+@@if (!context.arabic === true) {
+@@include('../resources/css-files.html')
+}
+
+<!-- FavIcon -->
+<link rel="icon" type="image/png" href="/img/global/favicon.ico" />
+
+<!-- HTML5 Tags Compitability -->
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->

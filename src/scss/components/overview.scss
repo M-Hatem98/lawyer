@@ -1,0 +1,26 @@
+
+
+.overview-section {
+    position: relative;
+    background-color: $color-dark;
+    background-image: url('../../img/content/flex-bg.webp');
+    background-size: contain;
+    background-repeat: no-repeat;;
+    background-position: center;
+    padding: 60px 20px;
+    // img{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    // }
+  .overview-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+
+    p {
+        // line-height: 1.4;
+        color: #fff;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+footer {
+    background-color: $color-dark;
+    color: $color-white !important;
+    ul {
+        color: $color-white !important;
+
+        li {
+            a {
+                color: $color-white !important;
+                &:hover {
+                    color: $color-main !important;
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        a {
+            color: $color-main;
+        text-decoration: none;
+        &:hover {
+            color: $color-main-light;
+        }
+    }
+}
+}

@@ -1,0 +1,27 @@
+# Src
+#src
+
+# Mac
+.DS_Store
+.DS_Store?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# IDE
+.idea/
+.vs/
+*~
+
+# Node
+node_modules/
+
+# General
+coverage/
+log/
+cache/
+test/
+*.log
+
+vendor/

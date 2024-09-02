@@ -1,0 +1,38 @@
+.why-alaa-aljasmi {
+    padding: 60px 20px;
+  .content-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .content-box {
+      flex: 1;
+      padding: 20px;
+      background-color: $color-white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: $color-main;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: $color-dark;
+      }
+    }
+  }
+}

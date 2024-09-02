@@ -1,0 +1,44 @@
+// Variables
+@import "variables/colors";
+@import "variables/fonts";
+
+// Components
+@import "components/card";
+@import "components/header";
+@import "components/services";
+@import "components/accordion";
+@import "components/testimonial";
+@import "components/overview";
+@import "components/WhyAlaaAlJasmi";
+@import "components/about";
+@import "components/contact";
+@import "components/team";
+@import "components/footer";
+
+.spical-heading {
+    font-size: 100px !important;
+    color: $color-main-lighter !important;
+    text-align: center;
+    letter-spacing: -4px;
+    font-weight: 800;
+    margin: 0;
+
+    @media (max-width: 767.98px) {
+        font-size: 60px !important; // Adjust the font size for small screens
+    }
+}
+
+.spical-text {
+    font-size: 20px !important;
+    color: $color-main !important;
+    text-align: center;
+    margin-top: -30px;
+
+    @media (max-width: 767.98px) {
+        font-size: 14px !important; // Adjust the font size for small screens
+    }
+}
+
+// Override
+@import "override";
+
