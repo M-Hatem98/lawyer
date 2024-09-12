@@ -1,0 +1,136 @@
+.accordion-container {
+    background-color: $color-dark;
+    background-image: url('../../img/content/flex-bg.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    direction: rtl;
+
+    .accordion {
+        form {
+            padding: 10px;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        input {
+            display: none;
+
+            &:checked {
+                + label {
+                    background-color: transparent;
+                    border-left: 1px solid $color-grey-dark;
+                    color: $color-main;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        label {
+            &:hover {
+                background-color: transparent;
+                border-left: 1px solid $color-grey-dark;
+                color: $color-main;
+                font-size: 30px;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                text-align: center;
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
+            font-family: $font-family-1;
+            cursor: pointer;
+            display: block;
+            border-left: solid 1px $color-grey-dark;
+            text-align: center;
+            color: $color-main;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 3px;
+            float: left;
+            width: 150px;
+            height: 100%;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-align: center;
+            line-height: 150px;
+            background-color: transparent;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .content {
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            -webkit-transition: width .25s linear, opacity .2s linear;
+            transition: width .25s linear, opacity .3s linear;
+            position: relative;
+            top: 5px;
+            margin-bottom: 0;
+            margin-right: 10px;
+            opacity: 0;
+            float: left;
+
+            p {
+                color: $color-white;
+                font-family: $font-family-1;
+                font-size: 24px;
+                line-height: 30px;
+                padding: 20px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        div {
+            &:last-child {
+                .content {
+                    margin-right: 0;
+                }
+            }
+
+            > input {
+                &:checked {
+                    ~ .content {
+                        width: calc(100% - 500px);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-view {
+        display: none;
+        h3 {
+            color: $color-main;
+        }
+        @media (max-width: 991px) {
+            display: block;
+
+            .card {
+                margin-bottom: 15px;
+                background-color: transparent;
+                color: $color-white;
+                border: 1px solid $color-main;
+            }
+
+            .card-img-top {
+                max-width: 100%;
+                height: 300px;
+            }
+
+            .card-body {
+                padding: 15px;
+            }
+        }
+    }
+}

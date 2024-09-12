@@ -18,7 +18,7 @@
 .spical-heading {
     font-size: 100px !important;
     color: $color-main-lighter !important;
-    text-align: center;
+    text-align: center !important;
     letter-spacing: -4px;
     font-weight: 800;
     margin: 0;
@@ -31,7 +31,7 @@
 .spical-text {
     font-size: 20px !important;
     color: $color-main !important;
-    text-align: center;
+    text-align: center !important;
     margin-top: -30px;
 
     @media (max-width: 767.98px) {
@@ -39,6 +39,56 @@
     }
 }
 
+
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.phone {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    transition: all 0.3s;
+}
+
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px !important;
+    left: 30px !important;
+    z-index: 1000;
+}
+
+.call-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .call-us-button {
+      padding: 0.75rem 2rem;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    border: 1px solid $color-main;
+    background-color: transparent;
+    color: $color-main;
+    
+    &:hover {
+      background-color: $color-main;
+      color: $color-white;
+    }
+    
+    &:focus {
+      outline: 0;
+      box-shadow: 0;
+    }
+  }
+}
 // Override
 @import "override";
 

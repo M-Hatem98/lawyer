@@ -15,7 +15,8 @@ $overlay-color: rgba(0, 0, 0, 0.5); // Adjust the color and transparency as need
     color: $color-white;
     @include container-padding(100px);
     text-align: center;
-
+    direction: rtl; // RTL Direction
+    
     &::before {
         content: '';
         position: absolute;
@@ -44,6 +45,61 @@ $overlay-color: rgba(0, 0, 0, 0.5); // Adjust the color and transparency as need
 }
   
 .about-us {
+    background-color: $color-dark;
+    background-image: url('../../img/content/flex-bg.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px 20px;
+    direction: rtl; // RTL Direction
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: $color-main;
+        text-align: center;
+    }
+
+    .about-us-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .text-block, .image-block {
+            flex: 1;
+            padding: 0 20px;
+
+            @media (max-width: 768px) {
+                padding: 20px 0;
+            }
+        }
+
+        .text-block {
+            p {
+                font-size: 1rem;
+                line-height: 1.7;
+                color: $color-white;
+                margin-bottom: 15px;
+            }
+        }
+
+        .image-block {
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+.about-us[dir='ltr'] {
     background-color: $color-dark;
     background-image: url('../../img/content/flex-bg.webp');
     background-size: contain;
@@ -83,6 +139,8 @@ $overlay-color: rgba(0, 0, 0, 0.5); // Adjust the color and transparency as need
                 line-height: 1.7;
                 color: $color-white;
                 margin-bottom: 15px;
+                direction: ltr;
+                text-align: left;
             }
         }
 

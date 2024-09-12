@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en">
 <head>
   @@include('../components/head.html', {
-  "title": "Search"
+  "title": "Contact Us"
   })
 </head>
 <!-- Index Class -->
@@ -10,37 +10,9 @@
   @@include('../components/header.html')
 </header>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 m-auto">
-            <div class="card">
-                <div class="card-title text-center">
-                    <h2 class="py-3">Contact Us</h2>
-                    <hr>
-                </div>
-                <div class="card-body px-4">
-                    <form class="contact-form" action="/pages/contact/submit.php" method="post">
-                        <div class="mb-3">
-                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" name="submit" class="btn btn-custom btn-block">SEND</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-   </div>
+
+
+   @@include('../components/contact.html')
    @@include('../components/footer.html')
 
   @@include('../resources/js-files.html')

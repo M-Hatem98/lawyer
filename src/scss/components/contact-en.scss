@@ -1,0 +1,130 @@
+
+// .contact-us {
+//     direction: ltr;
+//     text-align: left;
+//     form {
+//         .btn-custom {
+//             background-color: $color-main;
+//             color: $color-white;
+//             &:hover {
+//                 background-color: darken($color-main, 10%);
+//             }
+//         }
+//     }
+//     .map {
+//         iframe {
+//             border: 0;
+//             width: 100%;
+//             height: 450px;
+//         }
+//     }
+
+//     .contact-text {
+//         // padding: 20px;
+//         p {
+//             line-height: 1.6;
+//             font-size: 1.3rem;
+//         }
+//     }
+
+//     .contact-info {
+//         ul {
+//             list-style: none;
+//             padding: 0;
+//             display: grid;
+//             grid-template-columns: repeat(2, 1fr);
+//             gap: 10px;
+
+//             li {
+//                 font-size: 18px;
+//                 margin-bottom: 10px;
+//                 i {
+//                     color: $color-main;
+//                 }
+//                 a {
+//                     color: $color-dark;
+//                     text-decoration: none;
+//                     &:hover {
+//                         color: $color-main;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     // Responsive adjustments
+//     @media (max-width: 768px) {
+//         .contact-info ul {
+//             grid-template-columns: 1fr;
+//         }
+//     }
+// }
+.contact-us {
+    direction: ltr;
+    text-align: left;
+
+    .contact-form {
+        direction: ltr;
+        text-align: left;
+    
+        .form-control {
+            text-align: left;
+        }
+    
+        .btn-custom {
+            background-color: $color-main;
+            color: $color-white;
+            &:hover {
+                background-color: darken($color-main, 10%);
+            }
+        }
+    }
+    .map {
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 450px;
+        }
+    }
+
+    .contact-text {
+        // padding: 20px;
+        p {
+            line-height: 1.6;
+            font-size: 1.3rem;
+        }
+    }
+
+    .contact-info {
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            text-align: left;
+
+            li {
+                font-size: 18px;
+                margin-bottom: 10px;
+                i {
+                    color: $color-main;
+                }
+                a {
+                    color: $color-dark;
+                    text-decoration: none;
+                    &:hover {
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+    }
+
+    // Responsive adjustments
+    @media (max-width: 768px) {
+        .contact-info ul {
+            grid-template-columns: 1fr;
+        }
+    }
+}

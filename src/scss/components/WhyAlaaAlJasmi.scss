@@ -1,5 +1,8 @@
 .why-alaa-aljasmi {
-    padding: 60px 20px;
+  padding: 60px 20px;
+  direction: rtl; // Right-to-left direction
+  text-align: right; // Align text to the right
+
   .content-row {
     display: flex;
     flex-direction: column;
@@ -17,9 +20,14 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out;
+      text-align: right; // Align text to the right
 
       &:hover {
         transform: translateY(-10px);
+      }
+
+      @media (max-width: 767.98px) {
+        text-align: center; // Center text on small screens
       }
 
       h3 {
@@ -36,3 +44,48 @@
     }
   }
 }
+.why-alaa-aljasmi[dir="ltr"] {
+    padding: 60px 20px;
+  
+    .content-row {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 20px;
+  
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+  
+      .content-box {
+        flex: 1;
+        padding: 20px;
+        background-color: $color-white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        text-align: left; // Default alignment for larger screens
+  
+        &:hover {
+          transform: translateY(-10px);
+        }
+  
+        @media (max-width: 767.98px) {
+          text-align: center; // Center text on small screens
+        }
+  
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 15px;
+          color: $color-main;
+        }
+  
+        p {
+          font-size: 1rem;
+          line-height: 1.7;
+          color: $color-dark;
+        }
+      }
+    }
+  }
+  

@@ -1,6 +1,73 @@
-.auto_prefix-example {
-  display: grid;
-  transition: all .5s;
-  user-select: none;
-  background: linear-gradient(to bottom, white, black);
-}
+// // Apply these styles specifically for English content
+// .accordion-container[dir="ltr"] {
+//   .accordion {
+
+//       input {
+//           &:checked {
+//               + label {
+//                   border-left: 1px solid $color-grey-dark;
+//               }
+//           }
+//       }
+
+//       label {
+//           border-left: solid 1px $color-grey-dark;
+//           transform: rotate(180deg);
+
+//           &:hover {
+//               border-left: 1px solid $color-grey-dark;
+//               transform: rotate(180deg);
+//           }
+//       }
+
+//       .content {
+//           margin-right: 10px;
+//           float: left;
+
+//           div {
+//               &:last-child {
+//                   .content {
+//                       margin-right: 0;
+//                   }
+//               }
+//           }
+//       }
+//   }
+// }
+
+// // Ensure the main styles are applied for RTL (Arabic)
+// .accordion-container[dir="rtl"] {
+//   .accordion {
+
+//       input {
+//           &:checked {
+//               + label {
+//                   border-right: 1px solid $color-grey-dark;
+//               }
+//           }
+//       }
+
+//       label {
+//           border-right: solid 1px $color-grey-dark;
+//           transform: rotate(-180deg);
+
+//           &:hover {
+//               border-right: 1px solid $color-grey-dark;
+//               transform: rotate(-180deg);
+//           }
+//       }
+
+//       .content {
+//           margin-left: 10px;
+//           float: right;
+
+//           div {
+//               &:last-child {
+//                   .content {
+//                       margin-left: 0;
+//                   }
+//               }
+//           }
+//       }
+//   }
+// }

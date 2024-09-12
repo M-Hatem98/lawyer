@@ -1,9 +1,41 @@
 footer {
     background-color: $color-dark;
     color: $color-white !important;
+    direction: rtl;
+    text-align: right;
+
     ul {
         color: $color-white !important;
+        padding-right: 0;
 
+        li {
+            a {
+                color: $color-white !important;
+                &:hover {
+                    color: $color-main !important;
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        a {
+            color: $color-main;
+            text-decoration: none;
+            &:hover {
+                color: $color-main-light;
+            }
+        }
+    }
+}
+
+footer[dir="ltr"] {
+    background-color: $color-dark;
+    color: $color-white !important;
+    direction: ltr;
+    text-align: left;
+    ul {
+        color: $color-white !important;
+        padding-left: 0;
         li {
             a {
                 color: $color-white !important;
