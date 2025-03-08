@@ -122,6 +122,20 @@
                 display: none;
             }
         }
+        .dropdown-menu {
+            background-color: #f8f9fa;  // Adjust as needed
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+            .dropdown-item {
+                color: #000;
+    
+                &:hover {
+                    color: $color-main;
+                    background-color: lighten($color-main, 40%);
+                }
+            }
+        }
     }
 }
 
@@ -169,7 +183,7 @@
             z-index: 1;
             text-align: center !important;
 
-            h1 {
+            h2 {
                 font-size: 2.5rem;
                 font-weight: bold;
                 color: $color-white;
@@ -326,18 +340,9 @@ header[dir='ltr']{
             display: block;
         }
 
-        // New small logo (visible only on small screens)
-        // .navbar-brand-smalls {
-        //     display: none;
-        // }
 
         @media (max-width: 991.98px) {
-        //     .navbar-brand-smalls {
-        //         display: block;
-        //         position: absolute;
-        //         right: 3% !important;
-        //         top: -24%;
-        //     }
+      
 
             .navbar-brand-large {
                 display: none;

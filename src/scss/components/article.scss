@@ -1,0 +1,66 @@
+.article {
+  // Default styles
+  margin: 2.5rem 0;
+  a {
+    color: $color-main;
+    text-decoration: underline;
+
+    &:hover {
+      color: darken($color-main, 10%);
+    }
+  }
+
+  p, li {
+    font-size: 18px;
+  }
+
+  h1, h2, h3 {
+    color: $color-main;
+  }
+img {
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 600px;
+
+}
+
+span {
+  font-size: 18px;
+  color: $color-main;
+}
+
+.auther {
+  border: 2px solid $color-main;
+}
+
+.consultation {
+  a {
+    background-color: $color-main !important;
+    color: $color-white !important;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid $color-main;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    &:hover {
+      background-color: $color-white !important;
+      color: $color-main !important;
+    }
+}
+}
+  // Add media query for small screens
+  @media (max-width: 576px) { // Small screen breakpoint (Bootstrap uses 576px for small screens)
+    margin: 0 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .responsive-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+}

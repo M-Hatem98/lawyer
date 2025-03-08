@@ -1,7 +1,28 @@
 .team {
+
     background-color: $color-main-lighter;
     direction: rtl; // Set the direction to RTL
     text-align: right; // Align text to the right
+/* Set proper overflow handling for swiper container */
+.swiper-containers {
+    width: 100%;
+    overflow: hidden;  /* Prevent horizontal scroll */
+}
+
+.team {
+    background-color: $color-main-lighter;
+    direction: rtl;  /* Set the direction to RTL */
+    text-align: right;  /* Align text to the right */
+    padding: 0 15px; /* Add some padding to avoid overflow */
+    box-sizing: border-box; /* Ensures padding doesn't cause horizontal scroll */
+}
+
+/* Prevent any element inside swiper from overflowing */
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /* Ensure items are aligned properly */
+}
 
     .team-item {
         position: relative;

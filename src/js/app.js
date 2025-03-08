@@ -1,22 +1,3 @@
-// import image from '../img/2024-07-08_12-13.png';
-//
-// // let myFunc = () => {
-// //   let x = 55
-// //   let y = 45
-// //
-// //   console.log(x + y)
-// //   console.log('Hello from app.js');
-// //
-// //   return image;
-// // }
-//
-//
-
-// document.querySelector('body').innerHTML = `<img src="${image}}">`;
-
-
-// console.log(process.env.NODE_ENV);
-
 
 document.addEventListener('DOMContentLoaded', function() {
     var swiper = new Swiper('.swiper-container', {
@@ -39,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 animateSlide();
             }
         }
-    });
+    }); 
 
     function animateSlide() {
         anime({
@@ -161,3 +142,55 @@ var swiper = new Swiper('.swiper', {
 });
 
 /**************************************************** */
+let team = document.getElementById('team');
+if (team) {
+
+    const swipers = new Swiper('.swiper-containers', {
+        slidesPerView: 4,  // Default for large screens
+        spaceBetween: 20,
+        loop: true, // Enables infinite loop
+        autoplay: {
+            delay: 3000, // Delay between transitions in milliseconds (3 seconds)
+            disableOnInteraction: false, // Continues autoplay after interaction
+        },
+    
+        breakpoints: {
+            1200: {
+                slidesPerView: 4, // Large screens
+            },
+            768: {
+                slidesPerView: 3, // Medium screens
+            },
+            400: {
+                slidesPerView: 1, // Small screens
+            },
+            250: {
+                slidesPerView: 1, // Small screens
+            },
+        },
+    });
+}
+
+var swiper = new Swiper(".swiper-article-container", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        400: { slidesPerView: 1 },
+        600: { slidesPerView: 2 },
+        1000: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 }
+    }
+});
